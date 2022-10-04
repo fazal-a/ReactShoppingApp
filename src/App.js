@@ -5,6 +5,7 @@ import Header from "./Components/Layout/Header";
 import AvailableItems from "./Components/Items/AvailableItems";
 import Cart from "./Components/Cart/Cart";
 import CartProvider from "./Store/CartProvider";
+// import DataFetching from "./DataFetching/DataFetching";
 
 // import UseFetch from "./UseFetch";
 
@@ -36,6 +37,7 @@ function App() {
       {/* {...data} */}
       <div className="App">
         <div>
+          {/* <DataFetching /> */}
           {cartIsShown && <Cart onHideCart={HideCartHandler} />}
           <Header onClick={ShowCartHandler}></Header>
           <AvailableItems />

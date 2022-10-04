@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 const CartContext = React.createContext({
   items: [],
+
   // totalAmount: 100,
   addItem: (item) => {},
-  removeItem: (id) => {},
+  removeItem: (item) => {},
   addUnit: (item) => {},
-  removeUnit: (id) => {},
+  // removeUnit: (id) => {},
 });
 
 export default CartContext;

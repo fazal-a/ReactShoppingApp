@@ -1,4 +1,5 @@
 import classes from "./CartItem.module.css";
+// import DataFetching from "../../DataFetching/DataFetching";
 
 const CartItem = (props) => {
   const price = +props.price;
@@ -7,6 +8,10 @@ const CartItem = (props) => {
   const amount = +props.amount;
   let totalPrice = price * amount;
   totalPrice = totalPrice.toFixed(1);
+
+  // const comingDataHandler = (items)=>{
+
+  //}
 
   return (
     <li className={classes["cart-item"]}>
